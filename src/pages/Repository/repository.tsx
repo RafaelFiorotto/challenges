@@ -3,23 +3,33 @@ import { useParams } from 'react-router-dom'
 
 import { Avatar } from '@siakit/avatar'
 import { Flex } from '@siakit/layout'
+import { useLoading } from '@siakit/loading'
+import { useToast } from '@siakit/toast'
 
 import api from '../../services/api'
 import { Container, Content, Text } from './styles'
 
 export default function Repository() {
+  const { setLoading } = useLoading()
+  const { addToast } = useToast()
   const { id, userName, repoName }: any = useParams()
   const [repositoryData, setRepositoryData] = useState<any>({})
   const [ownerData, setOwnerData] = useState<any>({})
 
   async function getRepositoryData() {
     try {
+      setLoading(true)
       const response = await api.get(`/repos/${userName}/${repoName}`)
       setRepositoryData(response.data)
       setOwnerData(response.data.owner)
-      console.log(response.data)
     } catch (error) {
-      console.log(error)
+      addToast({
+        type: 'error',
+        title: 'Atenção!',
+        description: 'Erro ao carregar repositório!',
+      })
+    } finally {
+      setLoading(false)
     }
   }
 

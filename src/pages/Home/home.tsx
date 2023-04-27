@@ -55,7 +55,13 @@ export default function Home() {
         })
       }
     } catch (error) {
-      console.log(error)
+      if (params.search !== '') {
+        addToast({
+          type: 'error',
+          title: 'Atenção!',
+          description: 'Erro ao carregar os repositórios!',
+        })
+      }
     } finally {
       setLoading(false)
     }
@@ -71,9 +77,12 @@ export default function Home() {
         title: 'Sucesso!',
         description: 'Repositório marcado como favorito!',
       })
-      console.log(favorites)
     } catch (error) {
-      console.log(error)
+      addToast({
+        type: 'error',
+        title: 'Atenção!',
+        description: 'Erro ao marcar como favorito!',
+      })
     } finally {
       setLoading(false)
     }
@@ -91,9 +100,12 @@ export default function Home() {
         title: 'Atenção',
         description: 'Repositório desmarcado como favorito!',
       })
-      console.log(favorites)
     } catch (error) {
-      console.log(error)
+      addToast({
+        type: 'error',
+        title: 'Atenção!',
+        description: 'Erro ao remover favorito!',
+      })
     } finally {
       setLoading(false)
     }
@@ -105,7 +117,9 @@ export default function Home() {
   )
 
   useEffect(() => {
-    loadRepositories()
+    if (params.search !== '') {
+      loadRepositories()
+    }
   }, [params])
 
   useEffect(() => {
@@ -113,7 +127,6 @@ export default function Home() {
     if (favs) {
       setFavorites(JSON.parse(favs))
     }
-    console.log(favorites)
   }, [])
 
   return (

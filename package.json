@@ -15,6 +15,7 @@
     "@siakit/core": "^0.0.19",
     "@siakit/eslint-config": "^0.0.11",
     "@siakit/layout": "^0.0.9",
+    "@siakit/loading": "^0.0.4",
     "@siakit/modal": "^0.0.14",
     "@siakit/table": "^0.0.17",
     "@siakit/toast": "^0.0.4",

@@ -1288,6 +1288,14 @@
   dependencies:
     "@siakit/core" "*"
 
+"@siakit/loading@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@siakit/loading/-/loading-0.0.4.tgz#2bc836dcec4936a9fcc8d6753af1852f3ea55c6d"
+  integrity sha512-G/iLKFinHFY00aqlgTiSYWjTqdbu7Ji9pE1PxfDf/BV3azfywqGOYcmGK4KL98retUTW68Ulbv2uvIxIeS2KIQ==
+  dependencies:
+    "@siakit/core" "*"
+    "@siakit/spinner" "*"
+
 "@siakit/mask@*":
   version "0.0.7"
   resolved "https://registry.npmjs.org/@siakit/mask/-/mask-0.0.7.tgz"
@@ -1331,6 +1339,13 @@
   version "0.0.4"
   resolved "https://registry.npmjs.org/@siakit/separator/-/separator-0.0.4.tgz"
   integrity sha512-0fv8TFnF2hOOdWlaYlbqgiVMJUKMNm1uUh5D39hyL4EoBFLcl1a9eD6ydlNwbwfQE8XfZ9o3lxmORKn2qTz56A==
+  dependencies:
+    "@siakit/core" "*"
+
+"@siakit/spinner@*":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@siakit/spinner/-/spinner-0.0.4.tgz#995931386570c02c09773d481e2f05c1882024c5"
+  integrity sha512-HomorJhdoWQBUrt/5/jbXoYLnZJUj7IfCfrwIttRoc4Ndd50fvRQLTIZVnWudBDcZxT5mX/JCmIuibNXpf/tUg==
   dependencies:
     "@siakit/core" "*"
 

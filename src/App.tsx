@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 
+import { LoadingProvider } from '@siakit/loading'
 import { useToast } from '@siakit/toast'
 
 import AppRoutes from './routes'
@@ -25,10 +26,10 @@ function App() {
     )
   }, [])
   return (
-    <>
+    <LoadingProvider>
       <GlobalStyle />
       <AppRoutes />
-    </>
+    </LoadingProvider>
   )
 }
 
