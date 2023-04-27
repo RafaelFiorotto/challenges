@@ -1,31 +1,25 @@
-# Desafio Dev Frontend Rac Systems
+# Challenge: Rac Systems
 
-Deve ser desenvolvido uma aplicação que permitirá que um usuário pesquise repositórios no GitHub, exibindo algumas infomações que você ache interesante de cada repositório (URL, contagem de watchers, de estrelas, de commits, e branches e etc...).
- 
-Deve poder adicionar um repositório da busca na sua lista de favoritos da aplicação;
+Single Page Application desenvolvida em React para consulta de repositórios no GitHub.
 
-Deve poder navegar à uma página de informações do repositório (a partir dos repositórios adicionandos na lista de favoritos) ever informações do repositório (issues, commits, pull requests, stars, release e etc) e um link para ir ao repositório no próprio GitHub.
+## Pré-requisitos:
 
-_Os campos citados não são obrigatórios, você pode escolher quais quer campos para compor seu layout._
+Copiar o projeto completo.
+Se não possuir o yarn instalado, entre na pasta raiz do projeto, abra o terminal e escreva o comando abaixo para instala-lo:
 
-OBS 1: _Não é necessário fazer com a API do GitHub, existe várias APIs gratuitas que podem ser utilizadas para o desafio: [Pokémon](https://pokeapi.co/), [Star Wars](https://swapi.dev/), [Marvel](https://developer.marvel.com/) e etc._
+### `yarn install` ou `yarn`
 
-OBS 2: _Você pode desenvolver mais funcionalidades para sua aplicação, não precisa se prender a apenas essas 3 funcionalidades descritas._
+## Execução:
 
-## Instruções para realizar o desafio
-Você pode fazer esse desafio na linguagem que desejar, mas gostamos <b>BASTANTE</b> do combo ReactJS 😍  (se utilizar typescript junto então ❤️ ).
+Para executar o app em modo desenvolvedor e manter o servidor ligado:
 
-Será considerado um diferencial se, junto ao Pull Request, ser enviado um mockup feito no [Figma](https://figma.com/)  da aplicação que foi desenvolvida.
+### `yarn dev`
 
-Faça um fork desse repositório e ao final do desafio crie um pull request com o título sendo o seu nome e na descrição informe seu contato, uma breve descrição do que sua aplicação faz e instruções para rodar o projeto.
+Entre em [http://localhost:5173](http://localhost:5173) para abrir no browser./
+A página irá atualizar se houver edições no código.
 
-### Ferramentas que podem auxiliar
-- Pesquisa de repositórios: https://api.github.com/search/repositories?q=node 
-- API do Github: https://docs.github.com/pt/rest/reference/repos
-- ReactJS: https://pt-br.reactjs.org/docs/getting-started.html
-- Axios: https://github.com/axios/axios
-- React Router DOM: https://reactrouter.com/web/guides/quick-start
+## Testes:
 
-### O que será avaliado?
-- Clareza e organização do código;
-- Resultado funcional da aplicação;
+Para executar o projeto em modo teste digite no console:
+
+### `yarn test`
