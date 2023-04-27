@@ -17,9 +17,3 @@ Para executar o app em modo desenvolvedor e manter o servidor ligado:
 
 Entre em [http://localhost:5173](http://localhost:5173) para abrir no browser./
 A página irá atualizar se houver edições no código.
-
-## Testes:
-
-Para executar o projeto em modo teste digite no console:
-
-### `yarn test`
